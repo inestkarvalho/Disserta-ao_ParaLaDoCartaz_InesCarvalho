@@ -114,8 +114,7 @@ void setup() {
   imagens[5]=loadImage("cor6.png");
   imagens[5].resize(round(width ), 0);
 
- //indiceft=int(random(0, 3));
-indiceft=2;
+ indiceft=int(random(0, 3));
 
   img = imagens[indiceft];
   img2 = imagens[indiceft + 3];
