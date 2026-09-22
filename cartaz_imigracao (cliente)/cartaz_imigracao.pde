@@ -680,8 +680,8 @@ void camadaveridica() {
   stroke(paleta2[0]);
   strokeWeight(grossura2);
   textSize(tam);
-
-  line(x8 + textWidth("SÃO "), y8 + 3, largura2, y8 + 3);
+if(popupAtivado==false||(popupAtivado==true&&(indiceft==0||indiceft==2))){
+  line(x8 + textWidth("SÃO "), y8 + 3, largura2, y8 + 3);}
   text("SÃO "+persetor[indiceft]+"% \nDO SETOR \n"+setor[indiceft], x8, y8);
 
   textAlign(CENTER);
