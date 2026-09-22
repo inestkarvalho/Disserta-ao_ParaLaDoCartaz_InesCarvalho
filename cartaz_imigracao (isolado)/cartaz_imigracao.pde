@@ -115,8 +115,7 @@ void setup() {
   imagens[5]=loadImage("imi6.png");
   imagens[5].resize(round(width ), 0);
 
- //indiceft=int(random(0, 3));
- indiceft=2;
+ indiceft=int(random(0, 3));
   img = imagens[indiceft];
   img2 = imagens[indiceft + 3];
 
@@ -678,8 +677,8 @@ void camadaveridica() {
   stroke(paleta2[0]);
   strokeWeight(grossura2);
   textSize(tam);
-
-  line(x8 + textWidth("SÃO "), y8 + 3, largura2, y8 + 3);
+if(popupAtivado==false||(popupAtivado==true&&(indiceft==0||indiceft==2))){
+  line(x8 + textWidth("SÃO "), y8 + 3, largura2, y8 + 3);}
   text("SÃO "+persetor[indiceft]+"% \nDO SETOR \n"+setor[indiceft], x8, y8);
 
   textAlign(CENTER);
@@ -736,12 +735,6 @@ void keyPressed() {
   }
 
   if (key=='t') {
-    /*indiceft=int(random(0, 2));
-     
-     img = imagens[indiceft];
-     img2 = imagens[indiceft + 3]; */
-
-
     if (indiceft==0) {
       y1 = random(height * 0.05, height * 0.07);
       y2=random(height*0.78, height*0.81);
