@@ -15,3 +15,4 @@ Versões:
   
  -  servidor-cliente --> ver cartazes dos três temas em conjunto, a interação da câmera é lida num skecth e transposta para os restantes dois sketches
 
+Video de demonstração: https://youtu.be/7daztBaPtjk 
